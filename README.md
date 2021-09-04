@@ -58,8 +58,8 @@ https://seleck.cc/1455
 
 <h1>UI</h1>
 デザインアイデア1
-![image]https://dribbble.com/shots/10769830-Pocket-Web-App
+https://dribbble.com/shots/10769830-Pocket-Web-App
 
 デザインアイデア2
-<a src="https://www.uplabs.com/posts/dashboard-web-app-56231a11-00da-4bf1-a15e-69d026d37b32
-">
+https://www.uplabs.com/posts/dashboard-web-app-56231a11-00da-4bf1-a15e-69d026d37b32
+
