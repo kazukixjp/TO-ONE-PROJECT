@@ -57,9 +57,12 @@ http://www2.kobe-u.ac.jp/~tnishida/programming/ChromeExtension-01.html
 https://seleck.cc/1455
 
 <h3>UI</h3>
+デザインアイデア(仮)
+<img src="img/to-one-ui-pre" height="400" width="800">
+
 デザインアイデア1
-https://dribbble.com/shots/10769830-Pocket-Web-App
+<img src="img/tooneイメージ1.png" height="400" width="800">
 
 デザインアイデア2
-https://www.uplabs.com/posts/dashboard-web-app-56231a11-00da-4bf1-a15e-69d026d37b32
+<img src="img/tooneイメージ2.png" height="400" width="800">
 
