@@ -11,3 +11,12 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+# 新しく作ったmodel
+
+
+# class Postnew(models.Model):
+#     parent_dir = models.CharField("親ディレクトリ", max_length=10)
+#     child_dir = models.CharField("子ディレクトリ", max_length=10)
+#     link = models.CharField("リンク")
+#     link_title = models.CharField("リンクのタイトル", max_length=22)
