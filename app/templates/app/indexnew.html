@@ -1,0 +1,99 @@
+{% extends "app/basenew.html" %}
+
+{% block content %}
+
+<!-- <div class="post">
+    <div class="container">
+        {% for post in post_data %}
+        <div class="content">
+            <div class="bew">
+                <h2 class="title">{{ post.title }}</h2>
+                <p class="text">{{ post.content|truncatechars:200 }}</p>
+                <div class="button">Learn more</div>
+            </div>
+            <div class="date">
+                {{ post.created|date }} by {{ post.author }}
+            </div>
+            <a href="{% url 'post_detail' post.id %}" class="stretched-link"></a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="about-us">
+        <div class="about-us-content">
+            <h5 class="title">What is TO ONE</h5>
+            <div class="about-us-content-detail">
+                <p>Best practice for everyone browsing</p>
+                <p class="para">
+                    You can organize the large number of daily search pages that you want to save into one place.
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<body>
+    <div class="based">
+
+        <br>
+        <a class="nav-link" href="#"
+            style="font-size: 32px; color: #ffffff; font-weight: bold; position: relative; left: 3px;">To One</a>
+
+
+        <div class="nav-tab">
+            {% if user.is_authenticated %}
+            <a class="nav-link" href="{% url 'index' %}">ME</a><br>
+            <a class="nav-link" href="{% url 'post_new' %}">FRIENDS</a><br>
+            <a class="nav-link" href="{% url 'post_new' %}">POST</a><br>
+            <a class="nav-link" href="{% url 'account_logout' %}">LOGOUT</a><br>
+            {% else %}
+            <a class="nav-link" href="{% url 'account_signup' %}">SIGNUP</a>
+            <a class="nav-link" href="{% url 'account_login' %}">LOGIN</a>
+
+            {% endif %}
+
+        </div>
+
+        <div class="level1"><span></span></div>
+        <div class="level2">
+            <ul>
+                <li>数学</li>
+                <li>機械学習</li>
+                <li>プログラミング</li>
+            </ul>
+
+        </div>
+        <div class="level3">
+            <ul>
+                <li><a href="https://www.maytisk.com/django-url-tag/">Django サイト内URLリンクの貼り方</a></li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+                <li>掃き出し法-連立一次方程式-</li>
+            </ul>
+
+        </div>
+        <div class="level4"><span style="position: relative; left: 5px;"><i class="fas fa-search"></i>search file</span>
+        </div>
+
+        <div class="level5">
+            <ul>
+                <li>線形代数</li>
+                <li>微分積分</li>
+                <li>確率・統計</li>
+                <li>解析学</li>
+                <li>最適化数学</li>
+            </ul>
+        </div>
+    </div>
+</body>
+{% endblock %}

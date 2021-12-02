@@ -1,0 +1,56 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glass-signup-form</title>
+    <link rel="stylesheet" href="{% static 'css/signup-glass.css' %}">
+</head>
+
+
+
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>Sign Up Form</h2>
+                    <form>
+                        {% csrf_token %}
+                        <div class="inputBox">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" placeholder="Mail adress">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password(again)">
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="SignUp">
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

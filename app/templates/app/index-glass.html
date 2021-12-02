@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glass-home-toone</title>
+    <link rel="stylesheet" href="{% static 'css/style-glass.css' %}">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container">
+            <header>
+                <a href="/" class="logo">ToOne</a>
+                <ul>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="#">ME</a></li>
+                    <li><a href="#">FRIENDS</a></li>
+                    <li><a href="{% url 'post_new' %}">POST</a></li>
+                    <li><a href="{% url 'account_logout' %}">LOGOUT</a></li>
+                    {% else %}
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'account_signup' %}">SIGNUP</a></li>
+                    <li><a href="{% url 'account_login' %}">LOGIN</a></li>
+                    {% endif %}
+                </ul>
+            </header>
+            <div class="parent-dir">
+                <!-- <h2>We are To One Project</h2> -->
+                <h3>Machine Learning</h3>
+                <h2>Mathmatics</h2>
+                <h2>Programming</h2>
+                <h3>Machine Learning</h3>
+                <h2>Mathmatics</h2>
+                <h2>Programming</h2>
+                <!-- <p>Best practice for everyone browsing<br>
+                    You can organize the large number of daily search pages that you want to save into one place.
+                </p>
+                <a href="#">Read More</a> -->
+            </div>
+
+            <div class="child-dir">
+                <p>Python</p>
+                <p>Django</p>
+                <p>Kivy</p>
+                <p>HTML/CSS</p>
+                <p>JavaScript</p>
+                <p>JQuery</p>
+                <p>React</p>
+                <p>Go</p>
+                <p>Kivy</p>
+                <p>HTML/CSS</p>
+                <p>JavaScript</p>
+                <p>JQuery</p>
+                <p>React</p>
+                <p>Go</p>
+            </div>
+
+            <div class="content-dir">
+                <p>Django サイト内URLリンクの貼り方を詳しく解説したサイト</p>
+                <p>Pythonのreduceと内包表記／ジェネレータ式を比較してみた</p>
+                <p>Kivy</p>
+                <p>HTML/CSS</p>
+                <p>JavaScript</p>
+                <p>JQuery</p>
+                <p>React</p>
+                <p>Go</p>
+                <p>Kivy</p>
+                <p>HTML/CSS</p>
+                <p>JavaScript</p>
+                <p>JQuery</p>
+                <p>React</p>
+                <p>Go</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
